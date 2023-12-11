@@ -1,7 +1,5 @@
 import React from 'react';
 // import
-// import Image from '../assets/avatar.svg';
-import Image from '../assets/12.png';
 // icon
 import { FaGithub, FaYoutube, FaDribbble, FaFacebook, FaLinkedin } from 'react-icons/fa';
 // type animation
@@ -32,15 +30,12 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[50px] font-semibold uppercase leading-[1]'>
-              {/* <span className='text-white mr-4'>I am a</span> */}
               <TypeAnimation
                 sequence={[
                   'Frontend Developer',
                   2000,
                   'Web Developer',
                   2000,
-                  // 'Youtuber',
-                  // 2000,
                 ]}
                 speed={20}
                 className='text-accent'
@@ -69,7 +64,7 @@ const Banner = () => {
                 </button>
               <button className='hover:bg-black/30 py-4 px-6 rounded-full'>
               <Link to='work' smooth={true} spy={true} className='text-gradient btn-link' >
-                My Project
+                See All Project
               </Link>
               </button>
             </motion.div>
@@ -96,7 +91,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] justify-center '>
-            <div className='rounded-full h-96 w-96 bg-img12 bg-center bg-cover' >
+            <div className='rounded-full h-96 w-96 bg-banner bg-center bg-cover' >
             </div>
 
           </motion.div>

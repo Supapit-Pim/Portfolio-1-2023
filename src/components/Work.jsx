@@ -7,9 +7,9 @@ import { fadeIn } from '../variants';
 import { Link } from 'react-scroll';
 
 // img
-import Img1 from '../assets/portfolio-img6.png'
-import Img2 from '../assets/portfolio-img5.png'
-import Img3 from '../assets/portfolio-img4.png'
+import Img1 from '../assets/work-1.png'
+import Img2 from '../assets/work-2.png'
+import Img3 from '../assets/work-3.png'
 
 const Work = () => {
   return (

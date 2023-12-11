@@ -23,7 +23,7 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
-          className='flex-1 bg-img13 bg-contain bg-no-repeat h-[640px] mix-blend-screen bg-top'></motion.div>
+          className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-screen bg-top'></motion.div>
           {/* text */}
           <motion.div 
           variants={fadeIn('left', 0.3)}
@@ -50,32 +50,7 @@ const About = () => {
                   GPA 
                 </div>
               </div>
-              {/* <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
-                </div>
-                <div className='font-primary text-sm tracking-[2px]'>
-                  Projects <br />
-                  Completed
-                </div>
-              </div>
-              <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={7} duration={3} /> : null}
-                </div>
-                <div className='font-primary text-sm tracking-[2px]'>
-                  Satisfied <br />
-                  Clients
-                </div>
-              </div> */}
             </div>
-            {/* <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Contact me</button>
-              <a href="#" className='text-gradient btn-link'>
-                My Portfolio
-              </a>
-            </div> */}
-            
           </motion.div>
         </div>
       </div>

@@ -87,7 +87,7 @@ const Contact = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='lg:bg-no-repeat flex-1 bg-img14 bg-contain bg-no-repeat h-[640px] mix-blend-screen bg-top mb-12 lg:mb-6 hidden lg:block'>
+            className='lg:bg-no-repeat flex-1 bg-contact bg-contain bg-no-repeat h-[640px] mix-blend-screen bg-top mb-12 lg:mb-6 hidden lg:block'>
           </motion.div>
 
         </div>

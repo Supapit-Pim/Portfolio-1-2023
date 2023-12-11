@@ -8,7 +8,7 @@ import { fadeIn } from '../variants';
 
 import { Link } from 'react-scroll';
 
-import Img1 from '../assets/portfolio-img7.png'
+import Img1 from '../assets/service.png'
 
 // servers data
 const services = [
@@ -49,15 +49,12 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            // className='flex-1 lg:bg-img15 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-6'>
             className='flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-6'>
             <h2 className='h2 text-accent mb-6'>What I Do</h2>
             <p className='max-w-sm mb-16'>
             This is the details of my project work, comprising a total of 3 projects.
             {/* "นี้คือรายละเอียดของงานในโปรเจกต์ของฉัน ที่ประกอบด้วยทั้งหมด 3 โปรเจกต์ */}
             </p>
-            {/* <h3 className='h3 max-w-[455px] mb-16'>
-            </h3> */}
             <button>
               <Link to='work' smooth={true} spy={true} className='active-button btn btn-sm'>
               View all project

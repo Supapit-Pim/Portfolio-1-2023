@@ -121,7 +121,6 @@ const Tool = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.4 }}>
             <h2 className='h2 text-accent flex justify-center'>TOOLS</h2>
-            {/* <div className='grid grid-cols-4 gap-4'> */}
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
               {tools.map((tool, index) => {
                 // destructure service
