@@ -37,7 +37,12 @@
 .active {
   color: #fff;
   padding: 1rem;
-  border-radius: 100%;
+  border-radius: 100%; 
+}
+
+.active-button {
+  border-radius: 1.5rem/* 24px */;
+  padding: 1rem/* 16px */;
 }
 
 @layer base {

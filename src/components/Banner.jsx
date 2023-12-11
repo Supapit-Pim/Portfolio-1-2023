@@ -1,15 +1,17 @@
 import React from 'react';
 // import
-import Image from '../assets/avatar.svg';
-// import Image from '../assets/me1.png';
+// import Image from '../assets/avatar.svg';
+import Image from '../assets/12.png';
 // icon
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaDribbble, FaFacebook, FaLinkedin } from 'react-icons/fa';
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
 import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
+
+import { Link } from 'react-scroll';
 const Banner = () => {
   return (
     <section className=' min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -22,28 +24,28 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
-              BEN <span>AIDEN</span>
+              className='text-[55px] font-bold leading-[0.8] lg:text-[90px]'>
+              SUPAPIT <span>INPANG</span>
             </motion.h1>
 
             <motion.div variants={fadeIn('up', 0.4)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[60px] font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-4'>I am a</span>
+              viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[50px] font-semibold uppercase leading-[1]'>
+              {/* <span className='text-white mr-4'>I am a</span> */}
               <TypeAnimation
                 sequence={[
-                  'Developer',
+                  'Frontend Developer',
                   2000,
-                  'Designer',
+                  'Web Developer',
                   2000,
-                  'Youtuber',
-                  2000,
+                  // 'Youtuber',
+                  // 2000,
                 ]}
-                speed={50}
+                speed={20}
                 className='text-accent'
-                wrapper='span'
                 repeat={Infinity}
+              // wrapper='span'
               />
             </motion.div>
 
@@ -52,7 +54,7 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-7 max-w-lg mx-auto lg:mx-0'>
-              My name is Supapit Inpeng, a recent graduate actively seeking opportunities in the field of Front-End Development. I have a 4 month internship experience at Chiangrai Enter Soft as a Front-End Developer and actively participated in a 7 month research project related to CMS within the same company.
+              Hi, I'm Supapit Inpeng, a recent graduate actively seeking opportunities in the field of Front-End Development.
             </motion.p>
 
             <motion.div variants={fadeIn('up', 0.6)}
@@ -60,10 +62,16 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>contact me</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Portfolio
-              </a>
+              <button className='btn btn-lg'>
+                <Link to='contact' smooth={true} spy={true} className='btn-link'>
+                contact me
+                </Link>
+                </button>
+              <button className='hover:bg-black/30 py-4 px-6 rounded-full'>
+              <Link to='work' smooth={true} spy={true} className='text-gradient btn-link' >
+                My Project
+              </Link>
+              </button>
             </motion.div>
 
             {/* socials */}
@@ -72,14 +80,14 @@ const Banner = () => {
               whileInView='show'
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href="#">
-                <FaYoutube />
+              <a href="https://www.facebook.com/profile.php?id=100006311357469" target="_blank" title="Facebook" className='hover:text-sky-400'>
+                <FaFacebook size={25}/>
               </a>
-              <a href="#">
-                <FaGithub />
+              <a href="https://github.com/Supapit-Pim" target="_blank" title="Github" className='hover:text-sky-400'>
+                <FaGithub size={25}/>
               </a>
-              <a href="#">
-                <FaDribbble />
+              <a href="https://www.linkedin.com/in/supapit-inpang-55095929b/" target="_blank"  title="Linkedin" className='hover:text-sky-400'>
+                <FaLinkedin size={25}/>
               </a>
             </motion.div>
           </div>
@@ -87,8 +95,10 @@ const Banner = () => {
           <motion.div variants={fadeIn('down', 0.6)}
             initial='hidden'
             whileInView={'show'}
-            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-            <img src={Image} alt='' />
+            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] justify-center '>
+            <div className='rounded-full h-96 w-96 bg-img12 bg-center bg-cover' >
+            </div>
+
           </motion.div>
         </div>
       </div>

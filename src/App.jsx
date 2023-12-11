@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
+import Tool from './components/Tool';
 import Services from './components/Services';
 import Work from './components/Work';
 import Contact from './components/Contact';
@@ -11,10 +12,12 @@ import Contact from './components/Contact';
 const App = () => {
   return (
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+      
       <Header />
       <Banner />
       <Nav />
       <About />
+      <Tool />
       <Services />
       <Work />
       <Contact />

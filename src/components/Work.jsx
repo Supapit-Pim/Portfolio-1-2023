@@ -3,10 +3,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
+
+import { Link } from 'react-scroll';
+
 // img
-import Img1 from '../assets/portfolio-img1.png'
-import Img2 from '../assets/portfolio-img2.png'
-import Img3 from '../assets/portfolio-img3.png'
+import Img1 from '../assets/portfolio-img6.png'
+import Img2 from '../assets/portfolio-img5.png'
+import Img3 from '../assets/portfolio-img4.png'
 
 const Work = () => {
   return (
@@ -14,17 +17,24 @@ const Work = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row gap-x-10'>
           <motion.div variants={fadeIn('right', 0.2)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }} 
-          className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             {/* text */}
             <div>
               <h2 className='h2 leading-tight text-accent'>My Latest <br /> Work.</h2>
-              <p className='max-w-sm mb-16'>
-                My name is Supapit Inpeng, a recent graduate actively seeking opportunities in the field of Front-End Development.
+              <p className='max-w-sm mb-24'>
+              This is an example of the appearance of my work, which consists of a total of 3 projects together.
+              {/* นี้คือตัวอย่างที่แสดงภาพลักษณ์ของงานของฉัน ซึ่งประกอบด้วยทั้งหมด 3 โปรเจกต์ร่วมกัน.  */}
               </p>
-              <button className='btn btn-sm'>View all projects</button>
+
+              <button>
+                <Link to='services' smooth={true} spy={true} className='active-button btn btn-sm'>
+                  See all project details
+                </Link>
+              </button>
+
             </div>
             {/* image1 */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -35,21 +45,21 @@ const Work = () => {
                 src={Img1} alt='' />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 
-              group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+              group-hover:bottom-32 transition-all duration-500 z-50'>
+                <span className='text-gradient'>Full Stack</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12
               group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-2xl text-white'>Centralized Web Management System For Internal Services Of Office : CWMISO </span>
               </div>
             </div>
           </motion.div>
           <motion.div variants={fadeIn('left', 0.2)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }} 
-          className='flex-1 flex flex-col gap-y-10'>
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 flex flex-col gap-y-6'>
             {/* image2 */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* oversay */}
@@ -59,13 +69,13 @@ const Work = () => {
                 src={Img2} alt='' />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 
-              group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+              group-hover:bottom-32 lg:group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-gradient'>Front-End</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12
               group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-2xl text-white'>Pa Sang Mae Chan Management System Website  </span>
               </div>
             </div>
 
@@ -78,13 +88,13 @@ const Work = () => {
                 src={Img3} alt='' />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 
-              group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+              group-hover:bottom-32 lg:group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-gradient'>Front-End</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12
               group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-2xl text-white'>Chiang Rai Tourism and Sports Office Website</span>
               </div>
             </div>
           </motion.div>

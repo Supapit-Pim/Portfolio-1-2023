@@ -6,30 +6,35 @@ import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
 
+import { Link } from 'react-scroll';
+
+import Img1 from '../assets/portfolio-img7.png'
+
 // servers data
 const services = [
   {
-    name: 'UI/UX Design',
+    name: 'Pa Sang Mae Chan Management System Website  ',
     description:
-      'I have a 4 month internship experience at Chiangrai Enter Soft as a Front-End Developer and actively participated in a 7 month research project related to CMS within the same company.',
+      'Responsive Design : Design and create a responsive login page for both Desktop and Mobile sizes.' +
+      ' Operations : Develop CRUD functionalities for managing department types and personal account settings.' +
+      ' Front-End Development : Create the front-end using PHP, Vue.js, and Tailwind CSS.',
     link: 'Learn more'
   },
   {
-    name: 'Development',
+    name: 'Chiang Rai Tourism and Sports Office Website',
     description:
-      'I have a 4 month internship experience at Chiangrai Enter Soft as a Front-End Developer and actively participated in a 7 month research project related to CMS within the same company.',
+      'Responsive Design : Create a website that is responsive in 3 sizes Desktop, Tablet, and Mobile.' +
+      ' Operations : Implement CRUD functionalities to manage all processes on the website, utilizing the Ajax technique for API calls.' +
+      ' Front-End Development : Create the front-end using PHP, Vue.js, and Tailwind CSS.',
     link: 'Learn more'
   },
   {
-    name: 'Degetal Marketing',
+    name: 'Centralized Web Management System For Internal Services Of Office : CWMISO',
     description:
-      'I have a 4 month internship experience at Chiangrai Enter Soft as a Front-End Developer and actively participated in a 7 month research project related to CMS within the same company.',
-    link: 'Learn more'
-  },
-  {
-    name: 'Product Branding',
-    description:
-      'I have a 4 month internship experience at Chiangrai Enter Soft as a Front-End Developer and actively participated in a 7 month research project related to CMS within the same company.',
+      'Design : Design the database and UX/UI for Desktop size only.'+
+      'Operations : Implemented backend API with Authentication and front-end CRUD operations covering the entire website system, utilizing the Axios API calling technique.'+
+      'Back-End Development : Use Node JS and MySQL following the MVVM pattern.' +
+      'Front-End Development : Utilize JavaScript, Vue.js, Tailwind CSS, and Vuetify.',
     link: 'Learn more'
   },
 ]
@@ -44,37 +49,39 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
+            // className='flex-1 lg:bg-img15 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-6'>
+            className='flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-6'>
             <h2 className='h2 text-accent mb-6'>What I Do</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>
-              My name is Supapit Inpeng, a recent graduate actively seeking opportunities in the field of Front-End Development.
-            </h3>
-            <button className='btn btn-sm'>See my work</button>
+            <p className='max-w-sm mb-16'>
+            This is the details of my project work, comprising a total of 3 projects.
+            {/* "นี้คือรายละเอียดของงานในโปรเจกต์ของฉัน ที่ประกอบด้วยทั้งหมด 3 โปรเจกต์ */}
+            </p>
+            {/* <h3 className='h3 max-w-[455px] mb-16'>
+            </h3> */}
+            <button>
+              <Link to='work' smooth={true} spy={true} className='active-button btn btn-sm'>
+              View all project
+              </Link>
+              </button>
+              <img src={Img1} alt='' className='h-[460px] w-auto hidden lg:block'/>
           </motion.div>
           {/* services */}
           <motion.div variants={fadeIn('left', 0.5)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }}
-          className='flex-1'>
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1'>
             {/* service list */}
             <div>
               {services.map((service, index) => {
                 // destructure service
                 const { name, description, link } = service
                 return (
-                  <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
-                    <div>
-                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
+                  <div className='' key={index}>
+                    <div className='mb-6'>
+                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-4'>{name}</h4>
                       <p className='font-secondary leading-tight'>{description}</p>
-                    </div>
-                    <div className='flex flex-col flex-1 items-end'>
-                      <a href="#" className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
-                        <BsArrowUpRight />
-                      </a>
-                      <a href="#" className='text-gradient text-sm'>
-                        {link}
-                      </a>
+                      <div className='border-b border-white/20 my-5'></div>
                     </div>
                   </div>
                 );
