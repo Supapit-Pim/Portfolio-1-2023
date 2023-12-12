@@ -20,7 +20,7 @@ const contacts = [
   },
   {
     icon: <FaLocationDot />,
-    detail: '302 M.3 Wiang, Chiang Saen, Chiang Rai ,57150',
+    detail: 'Chiang Rai, Thailand',
   },
 ]
 const Contact = () => {
@@ -45,7 +45,7 @@ const Contact = () => {
                   return (
                     <div className='text-xl flex space-x-4 space-y-2 items-center '>
                       {icon}
-                      <p> {detail}</p>
+                      <p>{detail}</p>
                     </div>
                   )
                 })}
