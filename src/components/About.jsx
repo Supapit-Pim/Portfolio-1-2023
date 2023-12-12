@@ -36,7 +36,7 @@ const About = () => {
               My name is Supapit Inpeng
             </h3>
             <p className='mb-6'>
-              I am a new graduate with a background in frontend development. I recently graduated from computer engineering chiang rai rajabhat university with a degree in bachelor of engineering. <br/> <p className='mb-3'/>
+              I am a new graduate with a background in frontend development. <br /> I recently graduated from computer engineering chiang rai rajabhat university with a degree in bachelor of engineering. <br/> <p className='mb-3'/>
               I have a 4 month internship experience at Chiangrai Enter Soft as a Front-End Developer and actively participated in a 7 month research project related to CMS within the same company. <br/> <p className='mb-3'/>
               I hope that you will give me the opportunity to join the team.
             </p>
