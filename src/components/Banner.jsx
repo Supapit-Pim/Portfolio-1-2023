@@ -57,16 +57,16 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0'>
+                <Link to='contact' smooth={true} spy={true} className='btn-link rounded-full'>
               <button className='btn btn-lg'>
-                <Link to='contact' smooth={true} spy={true} className='btn-link'>
                 contact me
-                </Link>
                 </button>
-              <button className='hover:bg-black/30 py-4 px-6 rounded-full'>
-              <Link to='work' smooth={true} spy={true} className='text-gradient btn-link' >
+                </Link>
+              <Link to='work' smooth={true} spy={true} className='text-gradient btn-link rounded-full' >
+              <button className='hover:bg-black/30 py-4 px-6 rounded-full border-2 border-white/40 hover:border-black/5 '>
                 See All Project
-              </Link>
               </button>
+              </Link>
             </motion.div>
 
             {/* socials */}

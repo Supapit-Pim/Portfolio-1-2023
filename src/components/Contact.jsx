@@ -35,14 +35,11 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1'>
             <div className='w-full'>
-              <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>
-                Get in rouch
-              </h4>
-              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
+              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12 text-accent'>
                 Let's work <br />
                 together
               </h2>
-              <div className='mb-20 lg:mb-44'>
+              <div className='mb-20 lg:mb-52'>
                 {contacts.map((contact, index) => {
                   const { icon, detail } = contact
                   return (
@@ -75,7 +72,7 @@ const Contact = () => {
                initial='hidden'
                whileInView='show'
                viewport={{ once: false, amount: 0.3 }} 
-              className=' mb-40 lg:mb-0 text-center lg:text-left'>
+              className=' mb-40 lg:mb-0 text-center lg:text-left  '>
                 Design inspired by Cristian Mihai's YouTube.
                 {/* ดีไซน์ได้รับแรงบันดาลใจจาก YouTube ของ Cristian Mihai  */}
               </motion.div>
