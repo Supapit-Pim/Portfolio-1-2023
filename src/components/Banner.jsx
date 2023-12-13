@@ -49,7 +49,7 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-7 max-w-lg mx-auto lg:mx-0'>
-              Hi, I'm Supapit Inpeng, a recent graduate actively seeking opportunities in the field of Front-End Development.
+              Hi, I'm Supapit Inpeng, a recent graduate actively seeking opportunities in the field of Front-End Developer.
             </motion.p>
 
             <motion.div variants={fadeIn('up', 0.6)}

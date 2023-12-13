@@ -17,7 +17,7 @@ const services = [
     description: [
       'Responsive Design : Design and create a responsive login page for both Desktop and Mobile sizes.',
       'Operations : Develop CRUD functionalities for managing department types and personal account settings.',
-      'Front-End Development : Create the front-end using PHP, Vue.js, and Tailwind CSS.',
+      'Front-End : Create the front-end using PHP, Vue.js, and Tailwind CSS.',
     ],
   },
   {
@@ -25,7 +25,7 @@ const services = [
     description: [
       'Responsive Design : Create a website that is responsive in 3 sizes Desktop, Tablet, and Mobile.',
       'Operations : Implement CRUD functionalities to manage all processes on the website, utilizing the Ajax technique for API calls.',
-      'Front-End Development : Create the front-end using PHP, Vue.js, and Tailwind CSS.',
+      'Front-End : Create the front-end using PHP, Vue.js, and Tailwind CSS.',
     ],
   },
   {
@@ -33,8 +33,8 @@ const services = [
     description: [
       'Design : Design the database and UX/UI for Desktop size only.',
       'Operations : Implemented backend API with Authentication and front-end CRUD operations covering the entire website system, utilizing the Axios API calling technique.',
-      'Back-End Development : Use Node JS and MySQL following the MVVM pattern.',
-      'Front-End Development : Utilize JavaScript, Vue.js, Tailwind CSS, and Vuetify.',
+      'Back-End : Use Node JS and MySQL following the MVVM pattern.',
+      'Front-End : Utilize JavaScript, Vue.js, Tailwind CSS, and Vuetify.',
     ],
   },
 ]
